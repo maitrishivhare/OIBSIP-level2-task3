@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="heading-section">
+            <h1>Daily Tasks</h1>
+            <p class="subtitle">Stay organized, stay productive</p>
+        </div>
+
+        <!-- Add Task Section -->
+        <div class="add-task-section">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Pending Tasks Section -->
+        <div class="task-section">
+            <h2>Pending Tasks</h2>
+            <ul id="pendingList"></ul>
+        </div>
+
+        <!-- Completed Tasks Section -->
+        <div class="task-section">
+            <h2>Completed Tasks</h2>
+            <ul id="completedList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

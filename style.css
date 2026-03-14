@@ -1,0 +1,201 @@
+[9:29 pm, 13/3/2026] maitrii: * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffb6c1;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff0f3;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(255, 105, 135, 0.2);
+}
+
+/* Heading Section */
+.heading-section {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ff6b9d, #c44569, #ff8fab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+    text-shadow: none;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #c44569;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Add Task Section */
+.add-task-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.add-task-section input {
+    flex: 1;
+    padding: 13px 18px;
+    border: 2px solid #ffb6c1;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.add-task-section input:focus {
+    border-color: #ff6b9d;
+}
+
+.add-task-section input::placeholder {
+    color: #bbb;
+}
+
+.add-task-section button {
+    padding: 13px 24px;
+    background: linear-gradient(135deg, #ff6b9d, #c44569);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    white-space: nowrap;
+}
+
+.add-task-section button:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.add-task-section button:active {
+    transform: scale(0.97);
+}
+
+/* Task Sections */
+.task-section {
+    margin-bottom: 30px;
+}
+
+.task-section h2 {
+    font-size: 1.2rem;
+    color: #c44569;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #ffb6c1;
+    padding-bottom: 8px;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid #ff6b9d;
+    box-shadow: 0 2px 8px rgba(255, 107, 157, 0.1);
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: translateX(4px);
+}
+
+/* Task Info */
+.task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.task-text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.task-text.done {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.task-date {
+    font-size: 0.75rem;
+    color: #bbb;
+}
+
+/* Task Buttons */
+.task-buttons {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.task-buttons button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.task-buttons button:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.btn-complete {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-edit {
+    background: linear-gradient(135deg, #ff6b9d, #c44569);
+    color: white;
+}
+
+.btn-delete {
+    background-color: #ff4757;
+    color: white;
+}
+
+/* Empty message */
+.empty-msg {
+    color: #ccc;
+    font-style: italic;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    text-align: center;
+}
