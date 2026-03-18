@@ -199,79 +199,28 @@ ul li:hover {
     padding: 10px 0;
     text-align: center;
 }
-[12:46 PM, 3/18/2026] maitrii: @media (max-width: 480px) {
-
-  body {
-    padding: 10px;
-    align-items: flex-start;
-  }
-
-  .container {
-    width: 100%;
-    padding: 15px;
-    border-radius: 15px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
-  }
-
-  /* FIX INPUT + BUTTON BREAKING */
-  .input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .input-group input {
-    width: 100%;
-    font-size: 0.9rem;
-  }
-
-  .input-group button {
-    width: 100%;
-    font-size: 0.9rem;
-  }
-
-  /* TEXT SIZE */
-  .section-title {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.8rem;
-  }
+/* FIX INPUT + BUTTON RESPONSIVENESS */
+.input-group {
+  display: flex;
+  width: 100%;
+  gap: 10px;
 }
-[12:46 PM, 3/18/2026] maitrii: @media (min-width: 481px) and (max-width: 768px) {
 
-  body {
-    padding: 20px;
-  }
+.input-group input {
+  flex: 1;
+  min-width: 0; /* VERY IMPORTANT */
+}
 
-  .container {
-    width: 95%;
-    max-width: 600px;
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
+.input-group button {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+@media (max-width: 480px) {
   .input-group {
-    display: flex;
-    gap: 10px;
-  }
-
-  .input-group input {
-    flex: 1;
+    flex-direction: column;
   }
 
   .input-group button {
-    white-space: nowrap;
+    width: 100%;
   }
 }
